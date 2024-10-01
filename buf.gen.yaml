@@ -1,0 +1,7 @@
+# buf.gen.yaml
+version: v2
+plugins:
+  - remote: buf.build/grpc/csharp:v1.66.1
+    out: ./src/ProtoSharp.WebApi/Generated
+  - remote: buf.build/protocolbuffers/csharp:v27.4
+    out: ./src/ProtoSharp.WebApi/Generated

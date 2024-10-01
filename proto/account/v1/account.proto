@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option csharp_namespace= "ProtoSharp.WebApi.Generated.Account.V1";
+package account.v1;
+
+service AccountService {
+  rpc OpenAccount(OpenAccountRequest) returns (OpenAccountResponse);
+}
+
+message OpenAccountRequest {
+	optional float initial_balance = 1;
+}
+
+message OpenAccountResponse {
+	string account_id = 1;
+	float balance = 2;
+}
